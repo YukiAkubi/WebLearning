@@ -1,0 +1,15 @@
+checkbox
+[
+class toggle
+class switch
+]
+
+radio
+
+range
+
+select
+
+それぞれの装飾を行う
+
+ホバーしたときの太字ありかも？

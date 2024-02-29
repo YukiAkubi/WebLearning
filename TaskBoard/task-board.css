@@ -1,0 +1,108 @@
+*{
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: var(--element-font-size);
+    background-color: var(--white);
+    color: var(--black);
+}
+
+::selection{
+    background-color: var(--secondary-color);
+    color: var(--secondary-letter-color);
+}
+
+/*label*/
+label{
+    vertical-align: middle;
+    color: var(--secondary-letter-color);
+}
+
+/*入力コントロール*/
+input,
+select{
+    border-color: var(--primary-color);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    height: var(--element-height);
+    width: var(--element-width);
+    padding: 4px;
+}
+input:focus,
+input:hover,
+select:focus
+select:hover{
+    background-color: var(--cursol-color);
+}
+
+/*入力コントロール（ボタン）*/
+input[type="button"].primary:focus,
+input[type="button"].primary:hover,
+input[type="button"].secondary:focus,
+input[type="button"].secondary:hover{
+    background-color: var(--cursol-color);
+    border-color: var(--cursol-color);
+    color: var(--cursol-letter-color);
+}
+
+/*ボタン*/
+input[type="button"]{
+    box-shadow: 3px 2px 3px var(--black);
+}
+/*プライマリボタン*/
+input[type="button"].primary{
+    background-color: var(--primary-color);
+    color: var(--primary-letter-color);
+}
+
+/*サブボタン*/
+input[type="button"].secondary{
+    border-style: none;
+    box-shadow: none;
+    background-color: var(--white);
+    color: var(--grey-800);
+}
+
+/*チェックボックス・ラジオボタン*/
+input[type="checkbox"],
+input[type="radio"]{
+    width: 20px;
+}
+
+input[type="checkbox"]::before{
+
+}
+input[type="checkbox"]::after{
+
+}
+
+/*レンジ*/
+input[type="range"]{
+    appearance: none;
+}
+
+/*セレクト*/
+select{
+    color: var(--primary-color);
+}
+select:focus,
+select:hover{
+    background-color: var(--cursol-color);
+    border-color: var(--cursol-color);
+    color: var(--cursol-letter-color);
+    font-weight: bold;
+}
+
+
+/*アンカー*/
+a{
+    color: var(--primary-color);
+}
+a:focus,
+a:hover{
+    background-color: var(--cursol-color);
+    border-color: var(--cursol-color);
+    color: var(--cursol-letter-color);
+    font-weight: bold;
+}

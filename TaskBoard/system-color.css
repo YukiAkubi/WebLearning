@@ -1,0 +1,14 @@
+:root{
+    --primary-color: var(--indigo-500);
+    --primary-letter-color: var(--white);
+    --secondary-color: var(--blue-100);
+    --secondary-letter-color: var(--black);
+    --accent-color: var(--amber-a-400);
+    --accent-letter-color: var(--black);
+    --cursol-color: var(--amber-a-100);
+    --cursol-letter-color: var(--black);
+    /* 以下分割予定 */
+    --element-width: 160px;
+    --element-height: 24px;
+    --element-font-size: 12px;
+}
