@@ -34,16 +34,16 @@ input:hover,
 select:focus
 select:hover{
     background-color: var(--cursol-color);
+    font-weight: bold;
 }
 
 /*入力コントロール（ボタン）*/
-input[type="button"].primary:focus,
 input[type="button"].primary:hover,
-input[type="button"].secondary:focus,
 input[type="button"].secondary:hover{
     background-color: var(--cursol-color);
     border-color: var(--cursol-color);
     color: var(--cursol-letter-color);
+    font-weight: bold;
 }
 
 /*ボタン*/
@@ -67,24 +67,29 @@ input[type="button"].secondary{
 /*チェックボックス・ラジオボタン*/
 input[type="checkbox"],
 input[type="radio"]{
+    accent-color: var(--primary-color);
     width: 20px;
 }
 
-input[type="checkbox"]::before{
-
+input[type="checkbox"]:hover + label,
+input[type="radio"]:hover + label{
+    font-weight: bold;
+    background-color: var(--cursol-color);
 }
-input[type="checkbox"]::after{
 
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label{
+    font-weight: bold;
 }
 
 /*レンジ*/
 input[type="range"]{
-    appearance: none;
+    accent-color: var(--primary-color);
 }
 
 /*セレクト*/
 select{
-    color: var(--primary-color);
+    accent-color: var(--primary-color);
 }
 select:focus,
 select:hover{
@@ -94,9 +99,14 @@ select:hover{
     font-weight: bold;
 }
 
+option:hover{
+    background-color: var(--cursol-color);
+    background-color: var(--cursol-letter-color);
+}
 
 /*アンカー*/
-a{
+a, 
+a:visited{
     color: var(--primary-color);
 }
 a:focus,
